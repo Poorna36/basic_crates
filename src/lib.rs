@@ -10,8 +10,11 @@
 //! let stats = NumStats::new(&data);
 //!
 //! assert_eq!(stats.gcd(), Ok(1));
+//!
 //! assert_eq!(stats.lcm(), Ok(5544));
+//!
 //! assert_eq!(stats.prime_count(), 2);
+//!
 //! assert_eq!(stats.primes(), vec![7, 11]);
 //!
 pub mod error;
