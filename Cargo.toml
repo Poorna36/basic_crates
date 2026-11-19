@@ -4,5 +4,7 @@ version = "0.1.0"
 edition = "2024"
 description = "GCD, LCM, prime numbers and their count for a list of numbers"
 license="MIT"
+repository = "https://github.com/Poorna36/basic_crates"
+readme = "README.md"
 
 [dependencies]
