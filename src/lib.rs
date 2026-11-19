@@ -14,7 +14,6 @@
 //! assert_eq!(stats.prime_count(), 2);
 //! assert_eq!(stats.primes(), vec![7, 11]);
 //!
-
 pub mod error;
 pub mod gcd;
 pub mod lcm;

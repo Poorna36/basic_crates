@@ -1,6 +1,5 @@
 // All the ways our functions can go wrong live in this one enum.
 // Each variant is a different kind of failure.
-
 use std::fmt;
 
 // Debug lets us print the error with {:?}.

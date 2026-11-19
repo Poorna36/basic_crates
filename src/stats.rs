@@ -13,7 +13,6 @@ use crate::prime::is_prime;
 /// assert_eq!(stats.prime_count(), 2);
 /// assert_eq!(stats.primes(), vec![7, 11]);
 ///
-
 pub struct NumStats<'a> {
     data: &'a [u64],
 }
@@ -45,7 +44,6 @@ impl<'a> NumStats<'a> {
     /// Returns "EmptyInput` if there are no numbers,
     /// "ZeroInLcm" if any number is 0
     /// "Overflow" if the answer is too big for a u64.
-
     pub fn lcm(&self) -> Result<u64> {
         if self.data.is_empty() {
             return Err(NumStatsError::EmptyInput);
@@ -62,7 +60,6 @@ impl<'a> NumStats<'a> {
     }
 
     /// All the prime numbers in the list with the the same order (with duplicattes)
-
     pub fn primes(&self) -> Vec<u64> {
         let mut found = Vec::new();
         for &n in self.data {
@@ -74,7 +71,6 @@ impl<'a> NumStats<'a> {
     }
 
     /// count of prime numbers
-
     pub fn prime_count(&self) -> usize {
         self.primes().len()
     }

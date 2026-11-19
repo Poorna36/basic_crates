@@ -9,7 +9,6 @@ use crate::gcd::gcd;
 
 ///use basic_math-number_theory::lcm::lcm;
 /// assert_eq!(lcm(4,6),OK(12));
-
 pub fn lcm(a: u64, b: u64) -> Result<u64> {
     if a == 0 || b == 0 {
         return Err(NumStatsError::ZeroInLcm);

@@ -8,7 +8,6 @@
 /// use basic_math_number_theory::prime::is_prime;
 /// assert!(is_prime(29));
 /// assert!(!is_prime(1));
-
 pub fn is_prime(n: u64) -> bool {
     if n < 2 {
         return false;
@@ -27,7 +26,7 @@ pub fn is_prime(n: u64) -> bool {
         if n % i == 0 {
             return false;
         }
-        i = i + 2;
+        i += 2;
     }
 
     return true;
