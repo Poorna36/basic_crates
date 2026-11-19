@@ -2,5 +2,7 @@
 name = "basic_math-number_theory"
 version = "0.1.0"
 edition = "2024"
+description = "GCD, LCM, prime numbers and their count for a list of numbers"
+license="MIT"
 
 [dependencies]
