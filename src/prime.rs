@@ -9,31 +9,25 @@
 /// assert!(is_prime(29));
 /// assert!(!is_prime(1));
 
-pub fn is_prime(n: u64) ->bool
-{
-    if n<2
-    {
+pub fn is_prime(n: u64) -> bool {
+    if n < 2 {
         return false;
     }
-    if n==2
-    {
+    if n == 2 {
         return true;
     }
 
-    if n%2==0
-    {
+    if n % 2 == 0 {
         return false;
     }
 
-    let mut i=3;
+    let mut i = 3;
 
-    while i<=(n/i)
-    {
-        if n%i==0
-        {
+    while i <= (n / i) {
+        if n % i == 0 {
             return false;
         }
-        i=i+2;
+        i = i + 2;
     }
 
     return true;

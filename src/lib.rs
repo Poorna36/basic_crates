@@ -3,7 +3,7 @@
 //! Small tools for working with a list of numbers: GCD, LCM,
 //! and finding prime numbers.
 //!
-//! 
+//!
 //! use basic_math_number_theory::NumStats;
 //!
 //! let data = vec![12, 18, 24, 7, 11];
@@ -13,10 +13,10 @@
 //! assert_eq!(stats.lcm(), Ok(5544));
 //! assert_eq!(stats.prime_count(), 2);
 //! assert_eq!(stats.primes(), vec![7, 11]);
-//! 
+//!
 
-pub mod gcd;
 pub mod error;
+pub mod gcd;
 pub mod lcm;
 pub mod prime;
 pub mod stats;

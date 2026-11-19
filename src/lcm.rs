@@ -1,7 +1,6 @@
 //! Least Common Multiples
 
 /// we can use the gcd to find lcm
-
 use crate::error::{NumStatsError, Result};
 use crate::gcd::gcd;
 
@@ -11,19 +10,16 @@ use crate::gcd::gcd;
 ///use basic_math-number_theory::lcm::lcm;
 /// assert_eq!(lcm(4,6),OK(12));
 
-pub fn lcm(a: u64, b:u64) -> Result<u64>
-{
-    if a==0 || b==0
-    {
+pub fn lcm(a: u64, b: u64) -> Result<u64> {
+    if a == 0 || b == 0 {
         return Err(NumStatsError::ZeroInLcm);
     }
 
-    let divide= a/gcd(a,b); // small otpmisation to keep the number small by dividing first
+    let divide = a / gcd(a, b); // small otpmisation to keep the number small by dividing first
 
-    match divide.checked_mul(b)
-    {
-        Some(ans)=>Ok(ans),
-        None=> Err(NumStatsError::Overflow),
+    match divide.checked_mul(b) {
+        Some(ans) => Ok(ans),
+        None => Err(NumStatsError::Overflow),
     }
 }
 

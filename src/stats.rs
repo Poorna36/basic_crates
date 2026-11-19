@@ -1,4 +1,3 @@
-
 use crate::error::{NumStatsError, Result};
 use crate::gcd::gcd;
 use crate::lcm::lcm;
@@ -15,7 +14,6 @@ use crate::prime::is_prime;
 /// assert_eq!(stats.primes(), vec![7, 11]);
 ///
 
-
 pub struct NumStats<'a> {
     data: &'a [u64],
 }
@@ -29,7 +27,7 @@ impl<'a> NumStats<'a> {
     /// GCD of all the numbers.
     ///
     /// Returns `EmptyInput` if there are no numbers.
-    
+
     pub fn gcd(&self) -> Result<u64> {
         if self.data.is_empty() {
             return Err(NumStatsError::EmptyInput);
