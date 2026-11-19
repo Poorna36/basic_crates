@@ -107,9 +107,6 @@ src/
 └── stats.rs   # NumStats, which works on whole vectors
 ```
 
-## Performance notes
-
-`is_prime` uses trial division up to the square root of `n`. It is fast for everyday numbers, but testing very large primes near `u64::MAX` can take a long time.
 
 ## Running the tests
 
