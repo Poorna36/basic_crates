@@ -1,7 +1,7 @@
 # basic_math-number_theory
 
-[![Crates.io](https://img.shields.io/crates/v/basic_math-number_theory.svg)](https://crates.io/crates/basic_math-number_theory)
-[![Docs.rs](https://docs.rs/basic_math-number_theory/badge.svg)](https://docs.rs/basic_math-number_theory)
+[![Crates.io](https://crates.io/crates/basic_math-number_theory)
+[![Docs.rs](https://docs.rs/basic_math-number_theory)
 
 A small, dependency-free Rust crate for basic number theory on a list of numbers. Pass it a reference to a vector (or slice) and get the **GCD**, **LCM**, and the **prime numbers** it contains, with clear error handling and no panics on bad input.
 
