@@ -6,8 +6,11 @@
 /// 0 and 1 are not prime. 2 is the only even prime.
 ///
 /// use basic_math_number_theory::prime::is_prime;
+///
 /// assert!(is_prime(29));
+///
 /// assert!(!is_prime(1));
+///
 pub fn is_prime(n: u64) -> bool {
     if n < 2 {
         return false;

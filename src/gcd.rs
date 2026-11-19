@@ -5,8 +5,11 @@
 ///'gcd(0,n)==n' and 'gcd(0,0)==0'
 ///
 /// use basic_math-number_theory::gcd
+///
 /// assert_eq!(gcd(54,12),6);
+///
 /// assert_eq!(gcd(0,5),5);
+///
 pub fn gcd(mut a: u64, mut b: u64) -> u64 {
     while b != 0 {
         let t = b;

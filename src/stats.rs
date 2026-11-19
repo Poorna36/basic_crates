@@ -8,9 +8,13 @@ use crate::prime::is_prime;
 /// use basic_math_number_theory::stats::NumStats;
 ///
 /// let v = vec![12, 18, 7, 11];
+///
 /// let stats = NumStats::new(&v);
+///
 /// assert_eq!(stats.gcd(), Ok(1));
+///
 /// assert_eq!(stats.prime_count(), 2);
+///
 /// assert_eq!(stats.primes(), vec![7, 11]);
 ///
 pub struct NumStats<'a> {
