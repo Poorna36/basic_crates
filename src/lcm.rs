@@ -6,7 +6,6 @@ use crate::gcd::gcd;
 
 ///LCM of two numbers
 /// Sfely handles errors if number is 0 or if the result is to be for 64 bytes.
-
 ///use basic_math-number_theory::lcm::lcm;
 /// assert_eq!(lcm(4,6),OK(12));
 pub fn lcm(a: u64, b: u64) -> Result<u64> {

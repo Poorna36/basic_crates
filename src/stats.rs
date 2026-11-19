@@ -26,7 +26,6 @@ impl<'a> NumStats<'a> {
     /// GCD of all the numbers.
     ///
     /// Returns `EmptyInput` if there are no numbers.
-
     pub fn gcd(&self) -> Result<u64> {
         if self.data.is_empty() {
             return Err(NumStatsError::EmptyInput);

@@ -16,20 +16,20 @@ pub fn is_prime(n: u64) -> bool {
         return true;
     }
 
-    if n % 2 == 0 {
+    if n.is_multiple_of(2)  {
         return false;
     }
 
     let mut i = 3;
 
     while i <= (n / i) {
-        if n % i == 0 {
+        if  n.is_multiple_of(i) {
             return false;
         }
         i += 2;
     }
 
-    return true;
+    true
 }
 
 #[cfg(test)]
